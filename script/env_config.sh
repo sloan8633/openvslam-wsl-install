@@ -114,7 +114,7 @@ make -j4 \
 && sudo make install \
 && sudo ldconfig
 # install opengl
-&& sudo apt-get -y install libgl1-mesa-dev
+sudo apt-get -y install libgl1-mesa-dev
 # download and build vslam
 cd ~ \
 && git clone https://github.com/xdspacelab/openvslam \
@@ -130,5 +130,5 @@ cd ~ \
     .. \
 && make -j4
 # config socketviewer
-cd openvslam/viewer \
+cd ~/openvslam/viewer \
 && npm install
